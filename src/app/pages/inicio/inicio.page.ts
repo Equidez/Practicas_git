@@ -7,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
+ person: any = [{
+  Nombre : 'Daniel',
+  Apellido : 'Santacruz',
+  Localidad : [{
+    Ciudad : 'Durango',
+    Pais : 'Mexico',
+    Localidad :'Durango'
+  },
+    {
+      
+        Ciudad : 'Durango',
+        Pais : 'Mexico',
+        Localidad :'Durango'
+    }
+  ],
+  Dinero : 500,
+  Status : null
+ }];
+  
   constructor() { }
 
   ngOnInit() {
@@ -15,7 +34,9 @@ export class InicioPage implements OnInit {
   onClick()
   {
     console.log("Boton");
-    
   }
+ 
+  
+
 
 }
